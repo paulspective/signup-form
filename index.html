@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sign Up</title>
+  <link href="https://fonts.googleapis.com/css2?family=Mulish&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="signup-container">
+
+    <div class="signup-card">
+      <h1 class="bounce-in">Get Started</h1>
+      <form action="#" method="POST">
+        <input type="text" name="username" placeholder="Full Name" autocomplete="name" required>
+        <input type="email" name="email" placeholder="Email" autocomplete="email" required>
+
+        <div class="password-wrapper" id="passwordWrapper">
+          <input type="password" name="password" id="password" placeholder="Create a Password"
+            autocomplete="new-password" required>
+          <span id="togglePassword" class="toggle-text">Show</span>
+        </div>
+
+        <div class="strength-bar" id="strengthBar">
+          <div class="segment" id="seg1"></div>
+          <div class="segment" id="seg2"></div>
+          <div class="segment" id="seg3"></div>
+        </div>
+ 
+        <span class="strength-label" id="strengthLabel"></span>
+        <button type="submit">Sign Up</button>
+        <p class="footer-text">Already have an account? <a href="#">Login here</a></p>
+      </form>
+    </div>
+
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
