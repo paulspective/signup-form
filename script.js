@@ -12,7 +12,7 @@ const segments = [
 
 strengthLabel.style.display = 'none';
 
-passwordInput.addEventListener('focus', () => {
+passwordInput.addEventListener('keyup', () => {
   strengthBar.style.display = 'flex';
   strengthBar.style.opacity = '1';
   strengthBar.style.transform = 'translateY(0)';
